@@ -1,0 +1,168 @@
+ body {
+    background: rgb(191, 191, 191)
+    margin: 0 auto;
+  }
+
+  header {
+    background: url("https://s-media-cache-ak0.pinimg.com/originals/11/c9/a1/11c9a11b62f547c336501c5e3f94ed23.jpg");
+    height: 800px;
+    background-size: cover;
+    border-radius: 7px;
+    margin: -40px -7px 0 -7px;
+    text-align: center;
+    color:rgba(240, 240, 240, 0.8)
+  }
+
+ #title {
+    color: rgba(255, 255, 255,0.9);
+    font-size: 90px;
+    margin-top: 40px;
+    padding: 40px;
+    font-family: 'Slabo', serif;
+  }
+
+  h2 {
+    font-family: 'Slabo', serif;
+    color: rgba(255, 255, 255,0.9);
+    font-size: 32px;
+    top: 50px;
+  }
+
+  #heading {
+    color: rgba(255,255,255,1);
+    background: Gray;
+    background: -webkit-radial-gradient(top, rgba(38, 38, 38, 1), rgba(0,0,0,.6));
+    font-family: 'Oranienbaum', serif;
+    text-align: center;
+    font-size:45px;
+    color: white;
+    margin: 10px -8px;
+    padding: 5px 20px 5px 0px;
+  }
+
+  ul {
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 390px;
+  }
+  
+  li {position: relative;
+    display: inline;
+    bottom: 0;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  div {
+   height: 280px;
+   margin: 25px 20px;
+   background-size: cover;
+   position: relative;
+   border-radius: 10px;
+
+  }
+
+  p {
+    color: rgba(255,255,255,1);
+    background: black;
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    font-size: 32px;
+    position: relative;
+    top: 200px;
+    margin: 20px 0px 0px 0px;
+    padding: 5px 25px 5px 10px;
+    border-radius: 10px;
+    height: 60px;
+    transition: height 1s;
+    -webkit-transition: height 1s;
+    -moz-transition: height .5s;
+
+  }
+
+  small {
+    opacity: 0;
+    font-size: 14px
+  }
+
+ .show-description p {
+  height: 75px;
+}
+ .show-description small {
+  opacity: 1;
+}
+  .price {
+    float: right;
+  }
+
+  .steak {
+    background: url("http://badadvice.typepad.com/.a/6a00d8341c94c853ef0120a5055a50970b-pi") no-repeat center bottom;
+    background-size: cover;
+
+  }
+
+  .shrimp {
+    background: url("http://images.media-allrecipes.com/userphotos/560x315/1384969.jpg") no-repeat center right;
+    background-size: cover;
+  }
+
+  .dessert {
+   background: url("http://images-gmi-pmc.edge-generalmills.com/34c0ac81-656b-45f1-b0b9-6eff351f2dc9.jpg") no-repeat center;
+   background-size: cover;
+  }
+
+/* Mobile Starts Here*/
+
+  @media (max-width: 500px) {
+   header {
+    margin: 0 -7px 40px -6;
+    background-position: right;
+   }
+
+   #heading {
+     padding: 10;
+   }
+    ul {
+      margin: -160px 30px 0 0;
+    }
+    li {
+      font-size: 15px;
+      display: block;
+      margin: -25px 40px
+
+    }
+
+    div {
+     margin: 20px -8px;
+    }
+    .price {
+      font-size: 20px;
+      margin: 0 -25px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 20px;
+      width: 258;
+      margin: 5px 0 32px 0;
+      }
+    small {
+      font-size: 12px;
+    }
+    #cake {
+      font-size: 18px;
+
+    }
+    .show-description p {
+  height: 100px;
+}
+.show-description small {
+  opacity: 1;
+  }
+  $('div').on('click', function() {
+    $(this).toggleClass('show-description');
+  });
