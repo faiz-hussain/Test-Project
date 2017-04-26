@@ -1,4 +1,4 @@
- body {
+body {
     background: rgb(191, 191, 191)
     margin: 0 auto;
   }
@@ -163,6 +163,3 @@
 .show-description small {
   opacity: 1;
   }
-  $('div').on('click', function() {
-    $(this).toggleClass('show-description');
-  });
